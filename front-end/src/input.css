@@ -5,3 +5,7 @@
 .tql-navigation {
     @apply flex flex-row items-center cursor-pointer h-full;
 }
+
+.tql-brand-img {
+    @apply sm:w-[100px] sm:h-[30px] md:w-[110px] md:h-[33px]
+}
