@@ -1,0 +1,50 @@
+.card {
+  width: 33.5rem;
+  height: 46.7rem;
+  background: #212127;
+  background: url('../../assets/Card/background-image-card.svg');
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    padding: 1.6rem;
+
+    &--text {
+      &--title {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: 0.25rem;
+      }
+
+      &--desc {
+        color: #b6b6b6;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 146.667%;
+      }
+    }
+
+    &--detailed {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &--img {
+        width: 3.4rem;
+        height: 3.4rem;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      &--subinfo {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 146.667%;
+      }
+    }
+  }
+}

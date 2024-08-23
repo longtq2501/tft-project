@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../component/Header/header.jsx";
 import Introduction from "../../component/Introduction/Introduction.jsx";
 import BlockBrand from "../../component/BlockBrand/BlockBrand.jsx";
+import Card from "../../component/Card/Card.jsx";
 
 const Home = () => {
   return (
@@ -9,8 +10,10 @@ const Home = () => {
       <Header />
       <Introduction />
       <BlockBrand />
-      <div className="my-[30px] mx-[50px] flex flex-col items-center gap-[40px]
-       sm:mx-[70px] md:flex md:flex-col md:items-center lg:mx-[20px]">
+      <div
+        className="my-[30px] mx-[50px] flex flex-col items-center gap-[40px]
+       sm:mx-[70px] md:flex md:flex-col md:items-center lg:mx-[20px]"
+      >
         <div className="flex flex-col items-center">
           <p className="text-[14px] font-[400] leading-[30px] text-[#17E3A6]">
             Enjin Marketplace
@@ -94,6 +97,49 @@ const Home = () => {
               Grow your inventory with rare and unique digital treasures.
             </p>
           </div>
+        </div>
+      </div>
+
+      <div className="pt-[30px] mx-[17.5px] flex flex-col gap-[20px] items-center">
+        <p className="w-[218px] text-center text-[20px] font-[500] leading-[30px]">
+          Latest artworks with most valued bids
+        </p>
+
+        <div className="flex flex-row items-center justify-between w-full pt-[13px]">
+          <div className="flex flex-row items-center justify-between gap-[16px]">
+            <span className="tql-home-filter-text">NFTs</span>
+            <span className="tql-home-filter-text">Description</span>
+          </div>
+          <div className="flex flex-row items-center justify-between gap-[16px]">
+            <span className="tql-home-filter-text">Short by:</span>
+            <span className="tql-home-filter-text">Curated order</span>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="27"
+                height="27"
+                viewBox="0 0 27 27"
+                fill="none"
+              >
+                <path
+                  d="M17.2969 12.2344L13.5 16.4531L9.70312 12.2344"
+                  stroke="white"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        {/* separate */}
+        <div className="bg-[#3C3C3C] h-[1px] w-full"></div>
+        <div className=" grid  grid-cols-1 gap-[20px] sm:gap-[30px] md:grid-cols-2 md:gap-[76px] lg:grid-cols-3 lg:gap-[80px]">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </div>
       </div>
     </div>
