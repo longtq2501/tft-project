@@ -9,3 +9,15 @@
 .tql-brand-img {
     @apply sm:w-[100px] sm:h-[30px] md:w-[110px] md:h-[33px]
 }
+
+.tql-home-text-container {
+    @apply flex flex-col items-center gap-[10px]
+}
+
+.tql-home-text-subtitle {
+    @apply text-[26px] font-[500] leading-[36px]
+}
+
+.tql-home-text-description {
+    @apply text-[16px] font-[400] leading-[20px] text-center text-[#CFCFCF]
+}
