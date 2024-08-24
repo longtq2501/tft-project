@@ -4,6 +4,8 @@ import Introduction from "../../component/Introduction/Introduction.jsx";
 import BlockBrand from "../../component/BlockBrand/BlockBrand.jsx";
 import Card from "../../component/Card/Card.jsx";
 import Collection from "../../component/Collection/Collection.jsx";
+import "../../component/Introduction/Introduction.scss";
+import communityImage from "../../assets/community-image.svg";
 
 const Home = () => {
   return (
@@ -136,10 +138,12 @@ const Home = () => {
 
         {/* separate */}
         <div className="bg-[#3C3C3C] h-[1px] w-full"></div>
-        <div className=" grid grid-cols-1 gap-[20px] sm:gap-[30px] 
+        <div
+          className=" grid grid-cols-1 gap-[20px] sm:gap-[30px] 
         md:grid-cols-2 md:gap-x-[68px] 
         lg:grid-cols-3 lg:gap-[52px] 
-        xl:gap-x-[135px]">
+        xl:gap-x-[135px]"
+        >
           <Card />
           <Card />
           <Card />
@@ -149,14 +153,20 @@ const Home = () => {
 
       <div className="max-w-screen-xl xl:mx-auto mx-[17.5px] py-[40px] flex flex-col gap-[20px] items-center">
         <div className="flex flex-row items-center justify-between w-full">
-          <h3 className="text-[20px] font-[500] leading-[30px] text-[#fff] md:text-[30px] lg:text-[40px]">CURATED  COLLECTION</h3>
-          <span className="text-[14px] font-[500] leading-[24px] md:text-[20px] lg:text-[30px]">View all</span>
+          <h3 className="text-[20px] font-[500] leading-[30px] text-[#fff] md:text-[30px] lg:text-[40px]">
+            CURATED COLLECTION
+          </h3>
+          <span className="text-[14px] font-[500] leading-[24px] md:text-[20px] lg:text-[30px]">
+            View all
+          </span>
         </div>
         {/* collection container */}
-        <div className="grid grid-cols-1 gap-[20px] sm:gap-[30px] 
+        <div
+          className="grid grid-cols-1 gap-[20px] sm:gap-[30px] 
         md:grid-cols-2 md:gap-x-[68px] 
         lg:gap-[52px] 
-        xl:gap-x-[135px]">
+        xl:gap-x-[135px]"
+        >
           <Collection />
           <Collection />
           <Collection />
@@ -164,6 +174,25 @@ const Home = () => {
         </div>
       </div>
 
+      <div className="max-w-screen-xl xl:mx-auto mx-[17.5px] py-[20px] grid grid-cols-1 md:grid-cols-2 gap-[40px] place-items-start">
+        <div className="flex flex-col gap-[20px]">
+          <h3 className="text-[20px] font-[500] leading-[30px] text-[#fff] lg:text-[49px] lg:leading-[60px] md:text-[39px] md:leading-[50px]">
+            Join Oue Community
+          </h3>
+          <p className="text-[16px] font-[400] leading-[20px] text-[#cfcfcf] lg:text-[20px] lg:leading-[30px] lg:w-[370px] md:text-[18px] md:leading-[25px]">
+            Be part of our amazing community and stay tuned for the news.
+          </p>
+          <button
+            className="introduction__button hover:opacity-90
+         lg:w-[186px] lg:h-[60px] lg:text-[22px]
+          sm:text-[16px] sm:w-[166px] sm:h-[54px]
+           text-[22px] w-[166px] h-[54px] font-[400] leading-[22px] text-[#000] mt-[20px]"
+          >
+            Join us
+          </button>
+        </div>
+        <img src={communityImage} alt="communityImage" className="w-full" />
+      </div>
     </div>
   );
 };

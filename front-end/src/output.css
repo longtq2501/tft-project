@@ -612,6 +612,18 @@ video {
   top: 119px;
 }
 
+.top-\[\] {
+  top: ;
+}
+
+.top-\[97\] {
+  top: 97;
+}
+
+.top-\[97px\] {
+  top: 97px;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -651,6 +663,10 @@ video {
 
 .mr-\[10px\] {
   margin-right: 10px;
+}
+
+.mt-\[20px\] {
+  margin-top: 20px;
 }
 
 .flex {
@@ -766,6 +782,10 @@ video {
   flex-direction: column;
 }
 
+.place-items-start {
+  place-items: start;
+}
+
 .place-items-end {
   place-items: end;
 }
@@ -853,6 +873,10 @@ video {
   padding: 14px;
 }
 
+.p-\[20px\] {
+  padding: 20px;
+}
+
 .px-\[17\.5px\] {
   padding-left: 17.5px;
   padding-right: 17.5px;
@@ -873,6 +897,11 @@ video {
   padding-bottom: 40px;
 }
 
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .pt-\[13px\] {
   padding-top: 13px;
 }
@@ -881,8 +910,16 @@ video {
   padding-top: 30px;
 }
 
+.pt-\[20px\] {
+  padding-top: 20px;
+}
+
 .text-center {
   text-align: center;
+}
+
+.font-\[\] {
+  font-family: ;
 }
 
 .text-\[14px\] {
@@ -901,6 +938,10 @@ video {
   font-size: 48px;
 }
 
+.text-\[22px\] {
+  font-size: 22px;
+}
+
 .font-\[400\] {
   font-weight: 400;
 }
@@ -915,6 +956,18 @@ video {
 
 .leading-\[30px\] {
   line-height: 30px;
+}
+
+.leading-\[\] {
+  line-height: ;
+}
+
+.leading-\[20px\] {
+  line-height: 20px;
+}
+
+.leading-\[22px\] {
+  line-height: 22px;
 }
 
 .text-\[\#17E3A6\] {
@@ -933,6 +986,28 @@ video {
 }
 
 .text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[3\] {
+  color: 3;
+}
+
+.text-\[\#\] {
+  color: #;
+}
+
+.text-\[\#cfcfcf\] {
+  --tw-text-opacity: 1;
+  color: rgb(207 207 207 / var(--tw-text-opacity));
+}
+
+.text-\[\#000\] {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
@@ -1097,6 +1172,10 @@ video {
     top: 11px;
   }
 
+  .sm\:top-\[111px\] {
+    top: 111px;
+  }
+
   .sm\:mx-\[17\.5px\] {
     margin-left: 17.5px;
     margin-right: 17.5px;
@@ -1144,6 +1223,14 @@ video {
     padding-bottom: 40px;
   }
 
+  .sm\:pt-\[\] {
+    padding-top: ;
+  }
+
+  .sm\:pt-\[25px\] {
+    padding-top: 25px;
+  }
+
   .sm\:text-\[16px\] {
     font-size: 16px;
   }
@@ -1176,6 +1263,14 @@ video {
 
   .md\:right-0 {
     right: 0px;
+  }
+
+  .md\:top-\[104px\] {
+    top: 104px;
+  }
+
+  .md\:top-\[90px\] {
+    top: 90px;
   }
 
   .md\:ml-\[17\.5px\] {
@@ -1250,6 +1345,14 @@ video {
     padding-bottom: 60px;
   }
 
+  .md\:pt-\[\] {
+    padding-top: ;
+  }
+
+  .md\:pt-\[30px\] {
+    padding-top: 30px;
+  }
+
   .md\:text-\[16px\] {
     font-size: 16px;
   }
@@ -1265,9 +1368,53 @@ video {
   .md\:text-\[40px\] {
     font-size: 40px;
   }
+
+  .md\:text-\[39px\] {
+    font-size: 39px;
+  }
+
+  .md\:text-\[18px\] {
+    font-size: 18px;
+  }
+
+  .md\:leading-\[\] {
+    line-height: ;
+  }
+
+  .md\:leading-\[50px\] {
+    line-height: 50px;
+  }
+
+  .md\:leading-\[25px\] {
+    line-height: 25px;
+  }
+
+  .md\:text-\[\] {
+    color: ;
+  }
+
+  .md\:text-\[17\] {
+    color: 17;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:top-\[\] {
+    top: ;
+  }
+
+  .lg\:top-\[303px\] {
+    top: 303px;
+  }
+
+  .lg\:top-\[223px\] {
+    top: 223px;
+  }
+
+  .lg\:top-\[233px\] {
+    top: 233px;
+  }
+
   .lg\:mx-\[20px\] {
     margin-left: 20px;
     margin-right: 20px;
@@ -1331,6 +1478,14 @@ video {
 
   .lg\:w-\[80px\] {
     width: 80px;
+  }
+
+  .lg\:w-\[\] {
+    width: ;
+  }
+
+  .lg\:w-\[370px\] {
+    width: 370px;
   }
 
   .lg\:grid-cols-3 {
@@ -1445,6 +1600,10 @@ video {
     line-height: 1.75rem;
   }
 
+  .lg\:text-\[49px\] {
+    font-size: 49px;
+  }
+
   .lg\:font-\[600\] {
     font-weight: 600;
   }
@@ -1465,9 +1624,25 @@ video {
     line-height: 60px;
   }
 
+  .lg\:leading-\[\] {
+    line-height: ;
+  }
+
+  .lg\:leading-\[30px\] {
+    line-height: 30px;
+  }
+
   .lg\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  .lg\:text-\[\] {
+    color: ;
+  }
+
+  .lg\:text-\[2\] {
+    color: 2;
   }
 }
 
@@ -1478,6 +1653,10 @@ video {
 
   .xl\:left-0 {
     left: 0px;
+  }
+
+  .xl\:top-\[303px\] {
+    top: 303px;
   }
 
   .xl\:mx-auto {
@@ -1507,6 +1686,10 @@ video {
 
   .xl\:w-\[570px\] {
     width: 570px;
+  }
+
+  .xl\:w-\[528px\] {
+    width: 528px;
   }
 
   .xl\:gap-11 {

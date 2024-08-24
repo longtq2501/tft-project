@@ -8,7 +8,7 @@ const Collection = () => {
     <div className="collection relative w-[335px] h-[335px] lg:w-[500px] lg:h-[500px] xl:w-[570px] xl:h-[570px]">
       <div
         className="collection__content absolute bottom-[20px] left-[20px] w-[295px] 
-            flex flex-col gap-[30px] p-[14px] lg:w-[456px] lg:pt-[41px]"
+            flex flex-col gap-[30px] p-[20px] lg:w-[456px] lg:pt-[41px] md:pt-[30px] sm:pt-[25px] xl:w-[528px]"
       >
         <h3 className="text-[20px] font-[500] leading-[30px] w-[267px] lg:text-[34px] lg:font-[600] lg:leading-[46px] lg:w-[428px]">
           ALTERNATE MEDIUM SPACE
@@ -51,9 +51,9 @@ const Collection = () => {
         </div>
       </div>
 
-      <div className="absolute left-[30px] top-[119px] w-[166px] h-[40px] rounded-[33px] 
+      <div className="absolute left-[30px] w-[166px] h-[40px] rounded-[33px] 
       backdrop-blur-[4.5px] bg-[#d9d9d945] p-[10px]
-      flex flex-row justify-between items-center">
+      flex flex-row justify-between items-center lg:top-[233px] xl:top-[303px] md:top-[90px] top-[97px]">
         <img
           src={avatar}
           alt="avatar"
