@@ -3,6 +3,7 @@ import Header from "../../component/Header/header.jsx";
 import Introduction from "../../component/Introduction/Introduction.jsx";
 import BlockBrand from "../../component/BlockBrand/BlockBrand.jsx";
 import Card from "../../component/Card/Card.jsx";
+import Collection from "../../component/Collection/Collection.jsx";
 
 const Home = () => {
   return (
@@ -11,14 +12,14 @@ const Home = () => {
       <Introduction />
       <BlockBrand />
       <div
-        className="my-[30px] mx-[50px] flex flex-col items-center gap-[40px]
+        className="max-w-screen-xl xl:mx-auto my-[30px] mx-[50px] flex flex-col items-center gap-[40px]
        sm:mx-[70px] md:flex md:flex-col md:items-center lg:mx-[20px]"
       >
-        <div className="flex flex-col items-center">
-          <p className="text-[14px] font-[400] leading-[30px] text-[#17E3A6]">
+        <div className="flex flex-col items-center lg:gap-[10px]">
+          <p className="text-[14px] font-[400] leading-[30px] text-[#17E3A6] lg:text-[20px]">
             Enjin Marketplace
           </p>
-          <h3 className="text-[#D9D9D9] font-[500] text-[20px] leading-[30px]">
+          <h3 className="text-[#D9D9D9] font-[500] text-[20px] leading-[30px] lg:text-[50px]">
             Find your treasure
           </h3>
         </div>
@@ -30,7 +31,7 @@ const Home = () => {
               height="50"
               viewBox="0 0 50 50"
               fill="none"
-              className="mb-[10px]"
+              className="mb-[10px] lg:w-[80px] lg:h-[80px]"
             >
               <path
                 d="M25 0C11.2105 0 0 11.2105 0 25C0 38.7895 11.2105 50 25 50C38.7895 50 50 38.7895 50 25C50 11.2105 38.7895 0 25 0ZM25 45.9474C13.4211 45.9474 4.05263 36.5789 4.05263 25C4.05263 13.4211 13.4211 4.05263 25 4.05263C36.5789 4.05263 45.9474 13.4211 45.9474 25C45.9474 36.5789 36.5789 45.9474 25 45.9474Z"
@@ -54,7 +55,7 @@ const Home = () => {
               height="50"
               viewBox="0 0 49 50"
               fill="none"
-              className="mb-[10px]"
+              className="mb-[10px] lg:w-[80px] lg:h-[80px]"
             >
               <path
                 d="M39.6248 0.87207C37.1845 0.87207 34.8447 1.81512 33.1193 3.49376C31.3938 5.17241 30.4246 7.44889 30.4246 9.82305C30.4246 12.1967 31.3939 14.4737 33.1193 16.1518C34.8447 17.8304 37.1845 18.7735 39.6248 18.7735C42.0645 18.7735 44.4043 17.8304 46.1298 16.1518C47.8552 14.4737 48.8245 12.1967 48.8245 9.82305C48.8222 7.44944 47.8524 5.1741 46.1275 3.49599C44.4026 1.81787 42.0639 0.874294 39.6247 0.87207H39.6248ZM39.6248 14.1034V14.1039C38.4574 14.1039 37.3385 13.6528 36.5132 12.8498C35.6885 12.0474 35.2247 10.9584 35.2247 9.82312C35.2247 8.68788 35.6885 7.59878 36.5132 6.79586C37.3386 5.99344 38.4574 5.54228 39.6248 5.54228C40.7916 5.54228 41.9105 5.99344 42.7358 6.79586C43.5611 7.59883 44.0243 8.68788 44.0243 9.82312C44.0243 10.9584 43.5611 12.0475 42.7358 12.8498C41.9105 13.6528 40.7916 14.1039 39.6248 14.1039V14.1034Z"
@@ -85,7 +86,7 @@ const Home = () => {
               height="50"
               viewBox="0 0 50 50"
               fill="none"
-              className="mb-[10px]"
+              className="mb-[10px] lg:w-[80px] lg:h-[80px]"
             >
               <path
                 d="M48.494 9.13893H35.4671C35.9892 8.56276 36.399 7.91928 36.6658 7.21401C37.5092 4.98812 36.7807 2.58052 34.7173 0.774627C34.1387 0.267858 33.439 0 32.6927 0C29.8626 0 26.8234 4.26233 25.0005 7.33751C23.1769 4.26242 20.1385 0 17.3084 0C16.5628 0 15.8623 0.267858 15.2834 0.774627C13.221 2.58124 12.4926 4.98812 13.3355 7.21366C13.6027 7.91922 14.0128 8.56268 14.535 9.1392L1.5063 9.13885C0.674539 9.13885 0 9.81023 0 10.6389V18.4239C0 19.2522 0.674163 19.924 1.5063 19.924H4.89634V48.4999C4.89634 49.3282 5.5705 50 6.40264 50H43.597C44.4288 50 45.1033 49.3286 45.1033 48.4999V19.9249H48.4937C49.3255 19.9249 50 19.2535 50 18.4248V10.6398C50 9.81115 49.3255 9.13903 48.4937 9.13903L48.494 9.13893ZM27.4851 12.1391V16.9243H22.5155V12.1391H27.4851ZM32.6865 2.99713C32.6865 2.99713 32.7005 3.00411 32.7282 3.02817C33.8443 4.00505 34.2415 5.1163 33.8471 6.1563C33.2846 7.64068 31.0846 9.13827 27.4367 9.1397C29.4371 5.7388 31.7286 2.99987 32.6865 2.9971L32.6865 2.99713ZM17.2721 3.02782C17.2913 3.01108 17.3043 3.00236 17.3078 3.00062C18.2709 3.00097 20.5627 5.73955 22.5628 9.13974C18.9146 9.13834 16.7152 7.64036 16.1528 6.15634C15.6488 4.82259 16.4834 3.7191 17.272 3.02785L17.2721 3.02782ZM3.01242 12.1394H19.5027V16.9246L6.40228 16.9243H3.01224L3.01242 12.1394ZM7.9084 19.9251H19.5026L19.503 47.0001H7.90875L7.9084 19.9251ZM22.515 47.0001V19.9251H27.4846V47.0001H22.515ZM42.0903 47.0001H30.4961V19.9251H42.0903V47.0001ZM46.987 16.9251H30.4968V12.1399H46.987V16.9251Z"
@@ -100,8 +101,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="pt-[30px] mx-[17.5px] flex flex-col gap-[20px] items-center">
-        <p className="w-[218px] text-center text-[20px] font-[500] leading-[30px]">
+      <div className="max-w-screen-xl xl:mx-auto pt-[30px] mx-[17.5px] flex flex-col gap-[20px] items-center">
+        <p className="w-[218px] text-center text-[20px] font-[500] leading-[30px] lg:w-[524px] lg:text-[50px] lg:leading-[60px]">
           Latest artworks with most valued bids
         </p>
 
@@ -135,13 +136,34 @@ const Home = () => {
 
         {/* separate */}
         <div className="bg-[#3C3C3C] h-[1px] w-full"></div>
-        <div className=" grid  grid-cols-1 gap-[20px] sm:gap-[30px] md:grid-cols-2 md:gap-[76px] lg:grid-cols-3 lg:gap-[80px]">
+        <div className=" grid grid-cols-1 gap-[20px] sm:gap-[30px] 
+        md:grid-cols-2 md:gap-x-[68px] 
+        lg:grid-cols-3 lg:gap-[52px] 
+        xl:gap-x-[135px]">
           <Card />
           <Card />
           <Card />
           <Card />
         </div>
       </div>
+
+      <div className="max-w-screen-xl xl:mx-auto mx-[17.5px] py-[40px] flex flex-col gap-[20px] items-center">
+        <div className="flex flex-row items-center justify-between w-full">
+          <h3 className="text-[20px] font-[500] leading-[30px] text-[#fff] md:text-[30px] lg:text-[40px]">CURATED  COLLECTION</h3>
+          <span className="text-[14px] font-[500] leading-[24px] md:text-[20px] lg:text-[30px]">View all</span>
+        </div>
+        {/* collection container */}
+        <div className="grid grid-cols-1 gap-[20px] sm:gap-[30px] 
+        md:grid-cols-2 md:gap-x-[68px] 
+        lg:gap-[52px] 
+        xl:gap-x-[135px]">
+          <Collection />
+          <Collection />
+          <Collection />
+          <Collection />
+        </div>
+      </div>
+
     </div>
   );
 };

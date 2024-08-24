@@ -1,0 +1,9 @@
+.collection {
+  background: url("../../assets/Collection/bg-1.png") no-repeat;
+  background-size: cover;
+
+  &__content {
+    background: rgba(246, 246, 246, 0.2);
+    backdrop-filter: blur(112.5px);
+  }
+}

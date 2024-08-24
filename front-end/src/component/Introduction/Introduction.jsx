@@ -22,7 +22,7 @@ const Introduction = () => {
       </div>
 
       {/* image */}
-      <div className="md:basis-1/2 sm:flex-1 md:relative lg:mr-[20px] xl:mr-0 md:mr-[17.5px] sm:mx-[17.5px] mx-[17.5px] sm:flex items-center justify-center">
+      <div className="md:basis-1/2 sm:flex-1 md:relative lg:mr-[20px] xl:mr-0 md:mr-[17.5px] sm:mx-[17.5px] mx-[17.5px] sm:flex flex items-center justify-center">
         <img
           src={imageIntroduction}
           alt="image-introduction"
