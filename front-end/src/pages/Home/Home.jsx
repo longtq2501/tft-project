@@ -6,6 +6,9 @@ import Card from "../../component/Card/Card.jsx";
 import Collection from "../../component/Collection/Collection.jsx";
 import "../../component/Introduction/Introduction.scss";
 import communityImage from "../../assets/community-image.svg";
+import CatCard from "../../component/CatCard/CatCard.jsx";
+import MeeCatCard from "../../component/MeecatCard/Meecat.jsx";
+import Comment from "../../component/Comment/Comment.jsx";
 
 const Home = () => {
   return (
@@ -151,7 +154,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="max-w-screen-xl xl:mx-auto mx-[17.5px] py-[40px] flex flex-col gap-[20px] items-center">
+      <div className="max-w-screen-xl xl:mx-auto mx-[17.5px] py-[40px] flex flex-col gap-[20px] items-center lg:gap-[60px]">
         <div className="flex flex-row items-center justify-between w-full">
           <h3 className="text-[20px] font-[500] leading-[30px] text-[#fff] md:text-[30px] lg:text-[40px]">
             CURATED COLLECTION
@@ -165,7 +168,7 @@ const Home = () => {
           className="grid grid-cols-1 gap-[20px] sm:gap-[30px] 
         md:grid-cols-2 md:gap-x-[68px] 
         lg:gap-[52px] 
-        xl:gap-x-[135px]"
+        xl:gap-[135px]"
         >
           <Collection />
           <Collection />
@@ -192,6 +195,46 @@ const Home = () => {
           </button>
         </div>
         <img src={communityImage} alt="communityImage" className="w-full" />
+      </div>
+
+      <div className="max-w-screen-xl xl:mx-auto mx-[17.5px] pt-[40px] pb-[60px] flex flex-col gap-[30px] lg:gap-[60px] lg:pb-[150px]">
+        <h3 className="text-[20px] font-[500] leading-[30px] text-[#fff] md:text-[30px] lg:text-[35px] xl:text-[50px] xl:leading-[60px]">
+          Meecat COLLECTIBLES
+        </h3>
+        <div className="grid grid-cols-1 gap-[20px] w-[270px] self-center md:grid-cols-2 md:w-fit md:gap-[70px] lg:grid-cols-3 xl:grid-cols-4 xl:gap-[69px]">
+          <CatCard />
+          <CatCard />
+          <CatCard />
+          <CatCard />
+          <CatCard />
+          <CatCard />
+          <CatCard />
+          <CatCard />
+        </div>
+      </div>
+      <div className="bg-[#212127]">
+        <div className="max-w-screen-xl xl:mx-auto mx-[17.5px] pt-[40px] pb-[60px] flex flex-col gap-[30px] lg:gap-[87px] lg:pb-[70px]">
+          <h3 className="text-[20px] font-[500] leading-[30px] text-[#fff] md:text-[30px] lg:text-[35px] xl:text-[50px] xl:leading-[60px]">
+            Latest Meecats News
+          </h3>
+          <div className="grid grid-cols-1 gap-[20px] w-[335px] self-center md:grid-cols-2 md:w-fit md:gap-[70px] xl:grid-cols-3 xl:gap-[81px]">
+            <MeeCatCard />
+            <MeeCatCard />
+            <MeeCatCard />
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-screen-xl xl:mx-auto mx-[17.5px] my-[60px] flex flex-col items-center gap-[30px]">
+        <h3 className="w-[227px] text-[20px] font-[500] leading-[30px] text-[#fff] text-center sm:w-full sm:text-[30px] lg:w-[569px] lg:text-[50px] lg:leading-[60px]">What people are saying about Meecats</h3>
+        <div className="w-fit grid grid-cols-1 gap-[16px] md:grid-cols-2 lg:grid-cols-3 lg:w-full">
+          <Comment />
+          <Comment />
+          <Comment />
+          <Comment />
+          <Comment />
+          <Comment />
+        </div>
       </div>
     </div>
   );
