@@ -1676,6 +1676,11 @@ video {
     margin-bottom: 40px;
   }
 
+  .lg\:mx-\[17\.5px\] {
+    margin-left: 17.5px;
+    margin-right: 17.5px;
+  }
+
   .lg\:ml-\[20px\] {
     margin-left: 20px;
   }

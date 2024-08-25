@@ -8,9 +8,9 @@ const Header = () => {
   const toggleHandle = () => {};
 
   return (
-    <div className="max-w-screen-xl min-h-[46px] mx-auto flex flex-row justify-between items-center bg-black py-[24px]">
+    <div className="max-w-screen-xl min-h-[46px] xl:mx-auto mx-[17.5px] flex flex-row justify-between items-center bg-black py-[24px]">
       {/* sub-menu-icon */}
-      <div className="lg:hidden w-[50px] h-[50px] ml-[10px] p-3 cursor-pointer ">
+      <div className="lg:hidden w-[50px] h-[50px] p-[12px] cursor-pointer ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -27,14 +27,14 @@ const Header = () => {
         </svg>
       </div>
       {/* Logo */}
-      <Link to="/" className="mx-3">
+      <Link to="/" className="">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="107"
           height="42"
           viewBox="0 0 107 42"
           fill="none"
-          className="lg:ml-[20px] xl:ml-0"
+          className="xl:ml-0"
         >
           <path
             fill-rule="evenodd"
@@ -85,7 +85,7 @@ const Header = () => {
         height="19"
         viewBox="0 0 19 19"
         fill="none"
-        className="basis-1/9 w-[50px] h-[50px] mr-[10px] p-3 lg:hidden"
+        className="basis-1/9 w-[50px] h-[50px] p-[12px] lg:hidden"
       >
         <path
           d="M8.60938 14.8438C12.0525 14.8438 14.8438 12.0525 14.8438 8.60938C14.8438 5.16622 12.0525 2.375 8.60938 2.375C5.16622 2.375 2.375 5.16622 2.375 8.60938C2.375 12.0525 5.16622 14.8438 8.60938 14.8438Z"
