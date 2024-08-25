@@ -37,3 +37,7 @@
 .tql-collection-detailed {
   @apply text-[18px] font-[500] leading-[15px] text-[#fff]
 }
+
+.tql-footer-text {
+  @apply underline underline-offset-4 text-[12px] font-[500] leading-[150%] sm:text-[15px]
+}

@@ -9,6 +9,7 @@ import communityImage from "../../assets/community-image.svg";
 import CatCard from "../../component/CatCard/CatCard.jsx";
 import MeeCatCard from "../../component/MeecatCard/Meecat.jsx";
 import Comment from "../../component/Comment/Comment.jsx";
+import Footer from "../../component/Footer/Footer.jsx";
 
 const Home = () => {
   return (
@@ -227,15 +228,17 @@ const Home = () => {
 
       <div className="max-w-screen-xl xl:mx-auto mx-[17.5px] my-[60px] flex flex-col items-center gap-[30px]">
         <h3 className="w-[227px] text-[20px] font-[500] leading-[30px] text-[#fff] text-center sm:w-full sm:text-[30px] lg:w-[569px] lg:text-[50px] lg:leading-[60px]">What people are saying about Meecats</h3>
-        <div className="w-fit grid grid-cols-1 gap-[16px] md:grid-cols-2 lg:grid-cols-3 lg:w-full">
-          <Comment />
-          <Comment />
-          <Comment />
-          <Comment />
-          <Comment />
-          <Comment />
+        <div className="w-fit grid grid-cols-1 gap-[16px] md:grid-cols-2 lg:grid-cols-3 lg:w-full lg:grid-flow-row-dense">
+          <Comment text="I find the Bueno Generator really inspiring creatively."/>
+          <Comment text="We are strong believers in the potential of NFTs and are confident the Enjin team will play a key role in developing the infrastructure required to meet that potential."/>
+          <Comment text="The services offered by Efinity are a clear example of a much needed upgrade to a whole industry."/>
+          <Comment text="We are strong believers in the potential of NFTs and are confident the Enjin team will play a key role in developing the infrastructure required to meet that potential."/>
+          <Comment text="The services offered by Efinity are a clear example of a much needed upgrade to a whole industry."/>
+          <Comment text="I find the Bueno Generator really inspiring creatively."/>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };
