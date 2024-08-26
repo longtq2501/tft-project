@@ -3,21 +3,30 @@ import { Link } from "react-router-dom";
 import "./header.scss";
 
 const Header = () => {
-  const [toggle, SetToggle] = useState();
+  const wrapper = document.querySelector(".wrapper");
 
-  const toggleHandle = () => {};
+  const [isActive, setIsActive] = useState(false);
+  const [isPopupActive, setIsPopupActive] = useState(false);
+
+  const handleRegister = () => setIsActive(true);
+  const handleLogin = () => setIsActive(false);
+  const handlePopup = () => setIsPopupActive(true);
+  const handleClose = () => setIsPopupActive(false);
+
+  wrapper?.classList.toggle("active", isActive);
+  wrapper?.classList.toggle("active-popup", isPopupActive);
 
   return (
-    <div className="max-w-screen-xl min-h-[46px] xl:mx-auto mx-[17.5px] flex flex-row justify-between items-center bg-black py-[24px]">
+    <div className="relative mx-[17.5px] flex min-h-[46px] max-w-screen-xl flex-row items-center justify-between bg-black py-[24px] xl:mx-auto">
       {/* sub-menu-icon */}
-      <div className="lg:hidden w-[50px] h-[50px] p-[12px] cursor-pointer ">
+      <div className="h-[50px] w-[50px] cursor-pointer p-[12px] lg:hidden ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="size-6 w-full h-full"
+          class="size-6 h-full w-full"
         >
           <path
             stroke-linecap="round"
@@ -46,14 +55,14 @@ const Header = () => {
       </Link>
 
       {/* search bar */}
-      <div className="hidden cursor-pointer lg:flex lg:flex-row lg:items-center lg:justify-between lg:w-[350px] xl:w-[394px] lg:h-[46px] lg:opacity-9 lg:bg-[#edf2f7] rounded-lg mx-3">
+      <div className="lg:opacity-9 mx-3 hidden cursor-pointer rounded-lg lg:flex lg:h-[46px] lg:w-[350px] lg:flex-row lg:items-center lg:justify-between lg:bg-[#edf2f7] xl:w-[394px]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="19"
           height="19"
           viewBox="0 0 19 19"
           fill="none"
-          className="basis-1/9 w-12 h-12 p-3"
+          className="basis-1/9 h-12 w-12 p-3"
         >
           <path
             d="M8.60938 14.8438C12.0525 14.8438 14.8438 12.0525 14.8438 8.60938C14.8438 5.16622 12.0525 2.375 8.60938 2.375C5.16622 2.375 2.375 5.16622 2.375 8.60938C2.375 12.0525 5.16622 14.8438 8.60938 14.8438Z"
@@ -75,7 +84,7 @@ const Header = () => {
           name="search-bar"
           id="search-bar"
           placeholder="Search for artworks, collections, artists etc"
-          className="flex-1 h-full bg-transparent text-black rounded-lg placeholder:text-[#9d9d9d] placeholder:text-[15px] placeholder:leading-[15px]"
+          className="h-full flex-1 rounded-lg bg-transparent text-black placeholder:text-[15px] placeholder:leading-[15px] placeholder:text-[#9d9d9d]"
         />
       </div>
       {/* sub icon search-bar */}
@@ -85,7 +94,7 @@ const Header = () => {
         height="19"
         viewBox="0 0 19 19"
         fill="none"
-        className="basis-1/9 w-[50px] h-[50px] p-[12px] lg:hidden"
+        className="basis-1/9 h-[50px] w-[50px] p-[12px] lg:hidden"
       >
         <path
           d="M8.60938 14.8438C12.0525 14.8438 14.8438 12.0525 14.8438 8.60938C14.8438 5.16622 12.0525 2.375 8.60938 2.375C5.16622 2.375 2.375 5.16622 2.375 8.60938C2.375 12.0525 5.16622 14.8438 8.60938 14.8438Z"
@@ -104,8 +113,8 @@ const Header = () => {
       </svg>
 
       {/* navigation */}
-      <ul className="hidden lg:flex lg:flex-row lg:items-center xl:gap-11 lg:gap-8 h-full">
-        <li className="tql-navigation">
+      <ul className="hidden h-full lg:flex lg:flex-row lg:items-center lg:gap-8 xl:gap-11">
+        <li className="tql-navigation after relative">
           <span className="">Home</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -123,7 +132,7 @@ const Header = () => {
             />
           </svg>
         </li>
-        <li className="tql-navigation">
+        <li className="tql-navigation after relative">
           <span>Explore</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +150,7 @@ const Header = () => {
             />
           </svg>
         </li>
-        <li className="tql-navigation">
+        <li className="tql-navigation after relative">
           <span>Community</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -162,9 +171,101 @@ const Header = () => {
       </ul>
 
       {/* button login */}
-      <div className=" hidden lg:flex lg:border lg:border-white lg:px-[24px] lg:py-[12px] cursor-pointer">
-        <div className="header-btn lg:text-white lg:text-lg lg:font-normal lg:leading-[18px]">
+      <div
+        className="btn-popup hidden cursor-pointer rounded-[21px] transition hover:bg-[#17e3a6] hover:text-[#000] 
+      hover:duration-500 lg:flex lg:border lg:border-white lg:px-[24px] lg:py-[12px]"
+        onClick={() => handlePopup()}
+      >
+        <div className="header-btn lg:text-lg lg:font-normal lg:leading-[18px]">
           Connect
+        </div>
+      </div>
+
+      <div className="wrapper lg:mr-[100px] xl:left-[34%]">
+        <div className="icon-close" onClick={() => handleClose()}>
+          <ion-icon name="close"></ion-icon>
+        </div>
+
+        <div className="form-box login">
+          <h2>Connect</h2>
+          <form action="#">
+            <div className="input-box">
+              <span className="icon">
+                <ion-icon name="mail"></ion-icon>
+              </span>
+              <input type="email" name="" id="" required />
+              <label htmlFor="">Email</label>
+            </div>
+            <div className="input-box">
+              <span className="icon">
+                <ion-icon name="lock-closed"></ion-icon>
+              </span>
+              <input type="password" name="" id="" required />
+              <label htmlFor="">Password</label>
+            </div>
+            <div className="remember-forgot">
+              <label htmlFor="remember">
+                <input type="checkbox" name="remember" id="remember" />
+                Remember mes
+              </label>
+              <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" className="btn">
+              Login
+            </button>
+            <div className="login-register" onClick={() => handleRegister()}>
+              <p>
+                Don't have an account?
+                <a href="#" className="register-link">
+                  Register
+                </a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div className="form-box register">
+          <h2>Registration</h2>
+          <form action="#">
+            <div className="input-box">
+              <span className="icon">
+                <ion-icon name="person"></ion-icon>
+              </span>
+              <input type="text" name="" id="" required />
+              <label htmlFor="">Username</label>
+            </div>
+            <div className="input-box">
+              <span className="icon">
+                <ion-icon name="mail"></ion-icon>
+              </span>
+              <input type="email" name="" id="" required />
+              <label htmlFor="">Email</label>
+            </div>
+            <div className="input-box">
+              <span className="icon">
+                <ion-icon name="lock-closed"></ion-icon>
+              </span>
+              <input type="password" name="" id="" required />
+              <label htmlFor="">Password</label>
+            </div>
+            <div className="agree">
+              <label htmlFor="agree">
+                <input type="checkbox" name="agree" id="agree" />I agree to the
+                terms & conditions
+              </label>
+            </div>
+            <button type="submit" className="btn">
+              Register
+            </button>
+            <div className="login-register" onClick={() => handleLogin()}>
+              <p>
+                Already have an account?
+                <a href="#" className="login-link">
+                  Login
+                </a>
+              </p>
+            </div>
+          </form>
         </div>
       </div>
     </div>

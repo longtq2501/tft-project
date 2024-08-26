@@ -4,22 +4,22 @@ import test from "../../assets/long.jpg";
 
 const CatCard = () => {
   return (
-    <div className="w-[270px] relative">
+    <div className="relative w-[270px]">
       <img
         src={CatCardImage}
         alt="CatCardImage"
-        className="w-full h-[264px] object-cover"
+        className="h-[264px] w-full object-cover"
       />
-      <div className="bg-[#212127] border-[#fff] border-[1px] p-[20px] flex flex-col gap-[20px]">
+      <div className="flex flex-col gap-[20px] border-[1px] border-[#fff] bg-[#212127] p-[20px]">
         <div>
           <p className="text-[11px] font-[500] leading-[11px] text-[#d3d3d3]">
             Digital Fashion World
           </p>
-          <h3 className="text-[18px] font-[600] leading-[18px] text-[#fff] mt-[8px]">
+          <h3 className="mt-[8px] text-[18px] font-[600] leading-[18px] text-[#fff]">
             THE 33 MASK
           </h3>
         </div>
-        <div className="flex flex-row justify-between items-center">
+        <div className="flex flex-row items-center justify-between">
           <span className="text-[13px] font-[500] leading-[11px] text-[#d3d3d3]">
             Sold out
           </span>
@@ -29,13 +29,25 @@ const CatCard = () => {
         </div>
       </div>
 
-      <div className="absolute top-[10px] left-[10px] w-[80px] h-[32px] rounded-[18px] bg-[#d9d9d940] py-[6px] px-[10px] flex flex-row items-center">
-        <img src={test} alt="test" className="w-[20px] h-[20px] rounded-[50%] border-[1px] border-[#212127]"/>
-        <img src={test} alt="test" className="w-[20px] h-[20px] rounded-[50%] border-[1px] border-[#212127]"/>
-        <img src={test} alt="test" className="w-[20px] h-[20px] rounded-[50%] border-[1px] border-[#212127]"/>
+      <div className="absolute left-[10px] top-[10px] flex h-[32px] w-[80px] flex-row items-center rounded-[18px] bg-[#d9d9d940] px-[10px] py-[6px]">
+        <img
+          src={test}
+          alt="test"
+          className="h-[20px] w-[20px] rounded-[50%] border-[1px] border-[#212127]"
+        />
+        <img
+          src={test}
+          alt="test"
+          className="h-[20px] w-[20px] rounded-[50%] border-[1px] border-[#212127]"
+        />
+        <img
+          src={test}
+          alt="test"
+          className="h-[20px] w-[20px] rounded-[50%] border-[1px] border-[#212127]"
+        />
       </div>
 
-      <div className="absolute top-[10px] right-[16px]">
+      <div className="absolute right-[16px] top-[10px]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"

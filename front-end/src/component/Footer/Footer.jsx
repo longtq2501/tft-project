@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="bg-[#212127]">
       <div className="max-w-screen-xl py-[40px] lg:pt-[80px] xl:mx-auto">
-        <div className="flex flex-row flex-wrap justify-between gap-[40px] mx-[20px] order-1">
+        <div className="order-1 mx-[20px] flex flex-row flex-wrap justify-between gap-[40px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="107"
@@ -19,12 +19,27 @@ const Footer = () => {
               fill="white"
             />
           </svg>
-          <div className="flex flex-row gap-[44px] items-center order-3 mx-auto sm:order-2">
-            <a href="#" className="text-[16px] font-[400] leading-[18px] text-[#fdfdfd] lg:text-[18px]">Explore</a>
-            <a href="#" className="text-[16px] font-[400] leading-[18px] text-[#fdfdfd] lg:text-[18px]">Community</a>
-            <a href="#" className="text-[16px] font-[400] leading-[18px] text-[#fdfdfd] lg:text-[18px]">Drops</a>
+          <div className="order-3 mx-auto flex flex-row items-center gap-[44px] sm:order-2">
+            <a
+              href="#"
+              className="text-[16px] font-[400] leading-[18px] text-[#fdfdfd] lg:text-[18px]"
+            >
+              Explore
+            </a>
+            <a
+              href="#"
+              className="text-[16px] font-[400] leading-[18px] text-[#fdfdfd] lg:text-[18px]"
+            >
+              Community
+            </a>
+            <a
+              href="#"
+              className="text-[16px] font-[400] leading-[18px] text-[#fdfdfd] lg:text-[18px]"
+            >
+              Drops
+            </a>
           </div>
-          <div className="flex flex-row items-center gap-[12px] order-2 sm:order-3">
+          <div className="order-2 flex flex-row items-center gap-[12px] sm:order-3">
             <a href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -90,12 +105,20 @@ const Footer = () => {
         {/* separate */}
         <div className="my-[20px] h-[1px] bg-[#595959] lg:my-[40px]"></div>
 
-        <div className="xl:mx-auto mx-[40px] flex flex-col gap-[32px] items-center justify-center lg:flex-row">
-          <p className="text-[14px] font-[500] leading-[150%]">©2022, All right reserved.</p>
-          <div className="flex flex-row justify-between items-center w-full lg:gap-[24px] lg:w-[395px]">
-            <a href="#" className="tql-footer-text">Privacy Policy</a>
-            <a href="#" className="tql-footer-text">Terms of Service</a>
-            <a href="#" className="tql-footer-text">Cookies Settings</a>
+        <div className="mx-[40px] flex flex-col items-center justify-center gap-[32px] lg:flex-row xl:mx-auto">
+          <p className="text-[14px] font-[500] leading-[150%]">
+            ©2022, All right reserved.
+          </p>
+          <div className="flex w-full flex-row items-center justify-between lg:w-[395px] lg:gap-[24px]">
+            <a href="#" className="tql-footer-text">
+              Privacy Policy
+            </a>
+            <a href="#" className="tql-footer-text">
+              Terms of Service
+            </a>
+            <a href="#" className="tql-footer-text">
+              Cookies Settings
+            </a>
           </div>
         </div>
       </div>
